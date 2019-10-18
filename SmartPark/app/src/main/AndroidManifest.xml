@@ -15,17 +15,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".controllers.activities.MapActivityDriver"></activity>
-        <activity android:name=".controllers.activities.SignUpActivity" />
-        <activity android:name=".controllers.activities.SelectUserActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".controllers.activities.MapActivityDriver"
+
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".controllers.activities.SignUpActivity" />
+        <activity android:name=".controllers.activities.SelectUserActivity">
+
+        </activity>
         <activity android:name=".controllers.activities.LoginDriverActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.view.Gravity
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.ui.NavigationUI
 import com.example.smartpark.R
 import com.example.smartpark.controllers.activities.network.SmartParkApi
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,6 +28,7 @@ class LoginDriverActivity : AppCompatActivity() {
         }
         val inputEmail=findViewById<TextView>(R.id.inputEmail)
         inputEmail.requestFocus()
+
     }
 
     override fun onResume() {
